@@ -1,0 +1,17 @@
+group 'com.kalisen'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    compile 'org.apache.httpcomponents:httpclient:4.5.2'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
